@@ -1,0 +1,47 @@
+{
+  "_comment": "Modelo para gerar o .aab com Bubblewrap (TWA). Troque __SEU_DOMINIO__ pelo domínio onde o dist/ será hospedado (https). Depois rode: bubblewrap init --manifest=https://__SEU_DOMINIO__/manifest.webmanifest && bubblewrap build",
+  "packageId": "com.elenildon.horasextras",
+  "host": "__SEU_DOMINIO__",
+  "name": "Calendário de Horas Extras · Elenildon",
+  "launcherName": "Horas Extras",
+  "display": "standalone",
+  "orientation": "portrait",
+  "themeColor": "#4f46e5",
+  "navigationColor": "#0f172a",
+  "backgroundColor": "#0f172a",
+  "startUrl": "/",
+  "iconUrl": "https://__SEU_DOMINIO__/icons/icon-512.png",
+  "maskableIconUrl": "https://__SEU_DOMINIO__/icons/icon-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "enableNotifications": false,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "signing": {
+    "_comment": "O Bubblewrap gera o keystore na primeira build. Guarde o arquivo e as senhas: sem ele você não consegue atualizar o app na Play Store.",
+    "alias": "he",
+    "keystoreFile": "he-release.keystore"
+  },
+  "appVersionCode": 1,
+  "fallbackType": "customtabs",
+  "features": {
+    "locationDelegation": {
+      "enabled": false
+    },
+    "playBilling": {
+      "enabled": false
+    }
+  },
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://__SEU_DOMINIO__/",
+  "minSdkVersion": 24,
+  "qrCode": {
+    "enabled": false
+  }
+}

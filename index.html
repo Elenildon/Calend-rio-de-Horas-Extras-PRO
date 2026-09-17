@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Painel otimizado e 100% automatizado para controle de horas extras, adicionais, DSR e custos." />
+    <meta property="og:title" content="Remix CalendarioHorasExtras" />
+    <meta property="og:description" content="Painel otimizado e 100% automatizado para controle de horas extras, adicionais, DSR e custos." />
+    <meta name="theme-color" content="#4f46e5" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Horas Extras" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" type="image/png" href="./icons/icon-512.png" />
+    <link rel="icon" type="image/svg+xml" href="./icons/icon.svg" />
+    <link rel="apple-touch-icon" href="./icons/icon-512.png" />
+    <title>Remix CalendarioHorasExtras</title>
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("he-theme");
+          if (t === "dark" || t === "light") {
+            if (t === "dark") document.documentElement.classList.add("dark");
+          } else if (
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+          ) {
+            document.documentElement.classList.add("dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

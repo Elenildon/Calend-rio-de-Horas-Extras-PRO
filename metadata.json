@@ -1,0 +1,8 @@
+{
+  "name": "Remix CalendarioHorasExtras",
+  "description": "Painel otimizado e 100% automatizado para controle de horas extras, adicionais, DSR e custos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
